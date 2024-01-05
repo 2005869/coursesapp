@@ -64,7 +64,7 @@ fun CoursesCardApp(course: Topic, modifier: Modifier = Modifier) {
 
     Card(
         modifier = Modifier
-            .padding(paddingCard)
+            .padding(0.dp, paddingCard, 0.dp, paddingCard)
     ) {
         Row(
             modifier = Modifier
@@ -142,7 +142,6 @@ fun CourseGrid(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
         horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
         modifier = Modifier
-            .padding(5.dp)
     ) {
         items(Datasource.topics) { topic ->
             CoursesCardApp(course = topic)
